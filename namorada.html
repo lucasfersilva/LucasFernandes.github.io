@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para meu amor</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        .container {
+            margin-top: 50%;
+            height: 200px;
+            position: relative;
+            border: 3px;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="center">
+        <button style="font-size: 50px;" onclick="displayContent()">
+            CLICAR PARA VER QUEM É MEU AMOR
+        </button>
+        <img id="displayImage" src="https://media.licdn.com/dms/image/D4E03AQGGNq0UwlgIyg/profile-displayphoto-shrink_800_800/0/1699450950117?e=1711584000&v=beta&t=Ha_fz-cqvJj4YIHEj1xYzvybTYT3UHQFYpqf81t80r8" alt="Image" style="display: none;">
+         <!-- Big red hearts gif -->
+         <img id="bigHeartsGif" src="/Users/lucasfernandes/lucasfersilva.github.io-master/604ee4e00aa36cdc9197d3f2a7e49b10.gif" alt="Big Hearts Gif" style="display: none;">
+        <audio id="audioPlayer" src="careless-whisper-official-video.mp3" preload="auto" style="display: none;"></audio>
+    </div>
+</div>
+
+<script>
+    function displayContent() {
+        // Display the image
+        document.getElementById('displayImage').style.display = 'block';
+        document.getElementById('bigHeartsGif').style.display = 'block';
+        
+        // Play the audio
+        document.getElementById('audioPlayer').play();
+    }
+</script>
+
+</body>
+</html>
